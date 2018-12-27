@@ -1,17 +1,17 @@
 body {
     background: black;
     font-family: 'Varela', sans-serif;
-  }
+}
   
-  .glitch {
+.glitch {
     color: white;
     font-size: 50px;
     position: relative;
     width: 400px;
     margin: 0 auto;
-  }
+}
   
-  @keyframes noise-anim {
+@keyframes noise-anim {
     0% {
       clip: rect(33px, 9999px, 21.5px, 0);
     }
@@ -75,9 +75,9 @@ body {
     100% {
       clip: rect(50px, 9999px, 6.5px, 0);
     }
-  }
+}
   
-  .glitch:after {
+.glitch:after {
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -88,9 +88,9 @@ body {
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim 2s infinite linear alternate-reverse;
-  }
+}
   
-  @keyframes noise-anim-2 {
+@keyframes noise-anim-2 {
     0% {
       clip: rect(44px, 9999px, 22px, 0);
     }
@@ -154,9 +154,9 @@ body {
     100% {
       clip: rect(48px, 9999px, 42px, 0);
     }
-  }
+}
   
-  .glitch:before {
+.glitch:before {
     content: attr(data-text);
     position: absolute;
     left: -2px;
@@ -167,7 +167,7 @@ body {
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
-  }
+}
 
 
 * {
@@ -175,7 +175,8 @@ body {
     margin: 0;
     padding: 0;
   }
-  header {
+
+header {
     background: url(http://www.wallpapermade.com/images/wallpapers/originals/golden-state-bridge-in-the-evening-wallpaper-1694.jpg), #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,8 +186,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  header:before {
+}
+  
+header:before {
     content: "";
     display: block;
     position: absolute;
@@ -195,15 +197,18 @@ body {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
-  }
-  h1 {
+}
+
+h1 {
     color: #fff;
     font-size: 3em;
-  }
-  p {
+}
+  
+p {
     color: #fff;
-  }
-  section {
+}
+  
+section {
     width: 100%;
     height: 100vh;
     background: url(), #ddd;
@@ -212,15 +217,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  footer {
+}
+  
+footer {
     width: 100%;
     height: 100vh;
     background: url(), #47a;
     background-attachment: fixed;
     background-size: cover;
-  }
-  .btnf {
+}
+  
+.btnf {
     right: 25px;
     bottom: 25px;
     position: fixed;
@@ -228,8 +235,9 @@ body {
     color: white;
     font-size: 2em;
     cursor: pointer;
-  }
-  .nav-wrapper {
+}
+  
+.nav-wrapper {
     width: 100%;
     height: 60px;
     background: rgba(0, 0, 0, .3);
@@ -239,25 +247,30 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-  }
-  .izq {
+}
+  
+.izq {
     margin: 10px;
     padding: 10px;
     font-size: 2em;
     cursor: pointer;
-  }
-  ul li {
+}
+  
+ul li {
     display: inline-block;
     padding: 8px;
-  }
-  ul li:hover {
+}
+  
+ul li:hover {
     border-bottom: 1px solid rgba(255, 255, 255, .8);
-  }
-  .der {
+}
+  
+.der {
     margin: 10px;
     padding: 10px;
-  }
-  .bannerp {
+}
+  
+.bannerp {
     background: url(http://www.ssn.tv/wp-content/uploads/2014/07/NYC-1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -268,49 +281,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  h2 {
+}
+  
+h2 {
     color: #666;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
-  }
-  p.parr {
+}
+  
+p.parr {
     padding: 25px;
     margin-top: 0;
     color: #888;
-  }
-  
+}
+  /*
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  h2 {
+  }*/
+h2 {
     color: #666;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
-  }
-  p.parr {
+}
+  
+p.parr {
     padding: 25px;
     margin-top: 0;
     color: #888;
-  }
-  
+}
+  /*
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  h2 {
+  }*/
+h2 {
     color: #666;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
-  }
-  p.parr {
+}
+  
+p.parr {
     padding: 25px;
     margin-top: 0;
     color: #888;
-  }
+}
   
 #git {
     color: rgba(255, 255, 255, 1);
@@ -340,3 +357,62 @@ a, a:visited, a:hover, a:active {
     width: 250%;
     transition: width .3s;
 }
+
+.circle-container {
+    position: relative;
+    /* 1 */
+    width: 20em;
+    height: 20em;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+    /* 2 */
+    box-sizing: content-box;
+    /* 3 */
+    margin: 5em auto 0;
+    border: solid 5px black;
+}
+.circle-container > * {
+    /* 4 */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    margin: -3em;
+}
+.circle-container > :nth-of-type(1) {
+    transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+.circle-container > :nth-of-type(2) {
+    transform: rotate(45deg) translate(10em) rotate(-45deg);
+}
+.circle-container > :nth-of-type(3) {
+    transform: rotate(90deg) translate(10em) rotate(-90deg);
+}
+.circle-container > :nth-of-type(4) {
+    transform: rotate(135deg) translate(10em) rotate(-135deg);
+}
+.circle-container > :nth-of-type(5) {
+    transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+.circle-container > :nth-of-type(6) {
+    transform: rotate(225deg) translate(10em) rotate(-225deg);
+}
+.circle-container > :nth-of-type(7) {
+    transform: rotate(270deg) translate(10em) rotate(-270deg);
+}
+.circle-container > :nth-of-type(8) {
+    transform: rotate(315deg) translate(10em) rotate(-315deg);
+}
+.circle-container img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.circle-container img:hover {
+    filter: grayscale(0);
+}
+  
