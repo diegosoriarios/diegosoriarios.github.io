@@ -367,7 +367,7 @@ a, a:visited, a:hover, a:active {
 }
 .hero-content {
   position: absolute;
-  top: 150%;
+  top: 140%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -411,18 +411,18 @@ a, a:visited, a:hover, a:active {
   border-radius: 50%;
   list-style: none;
   /* 2 */
-  box-sizing: content-box;
+  /*box-sizing: content-box;
   /* 3 */
-  margin: 50% auto 0;
+  /*margin: 50% auto 0;*/
 }
 .circle-container > * {
   /* 4 */
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6em;
-  height: 6em;
+  width: 3em;
+  height: 3em;
   margin: -3em;
 }
 .circle-container > :nth-of-type(1) {
@@ -486,11 +486,46 @@ a, a:visited, a:hover, a:active {
   transform: rotate(342deg) translate(10em) rotate(-342deg);
 }
 .circle-container img {
-  display: block;
-  width: 50%;
+  display: inline-block;
+  width: 100%;
   border-radius: 50%;
-  filter: grayscale(100%);
+  margin: 0; 
 }
-.circle-container img:hover {
+
+.tech{
+  margin: 0;
+  padding: 0;
+}
+
+.tech span{
+  display: none;
+  position: relative;
+  bottom: 30px;
+  margin-left: -30px;
+  text-align: center;
+}
+
+.tech:hover > span{
+  display: block;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.tech:hover > img {
+  background-color: rgba(0, 0, 0, .7);
+  filter: opacity(0.3);
+}
+
+.tech:hover {
+  border: none;
+}
+
+.avatar img{
   filter: grayscale(0);
+  width: 10em;
+  height: 10em;
+  transform: translatex(-4em) translateY(-4em);
+  z-index: -1;
 }
+
