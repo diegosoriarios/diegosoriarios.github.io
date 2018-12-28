@@ -639,7 +639,7 @@ a, a:visited, a:hover, a:active {
 /* Image on the screen */
 .css-mb .mb-screen img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* Iframe on the screen */
