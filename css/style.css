@@ -291,7 +291,7 @@ ul li:hover {
 */
 
 h2 {
-    color: #666;
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
 }
@@ -308,7 +308,7 @@ p.parr {
     align-items: center;
   }*/
 h2 {
-    color: #666;
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
 }
@@ -325,7 +325,7 @@ p.parr {
     align-items: center;
   }*/
 h2 {
-    color: #666;
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
 }
@@ -538,3 +538,504 @@ a, a:visited, a:hover, a:active {
   z-index: -1;
 }
 
+/*----------------------------MOCKUP-------------------------------*/
+
+.css-mb {
+  max-width: 75%; /* Set the desired maximum width of the macbook */
+  min-width: 60%; /* Set the desired minimum width of the macbook */
+  margin: 50px auto 0; /* Align mockup to center */
+}
+
+.css-mb div {
+  box-sizing: border-box !important; /* Just in case */
+}
+
+/* Center the display */
+.css-mb .mb-display-position {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* The display */
+.css-mb .mb-display {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65.9442%;
+  background: #373435;
+  
+  -webkit-border-top-left-radius:  3.5% 5.3075%;
+      -moz-border-radius-topleft:  3.5% 5.3075%;
+          border-top-left-radius:  3.5% 5.3075%;
+  
+  -webkit-border-top-right-radius: 3.5% 5.3075%;
+      -moz-border-radius-toptight: 3.5% 5.3075%;
+          border-top-right-radius: 3.5% 5.3075%;
+}
+
+/* Webcam */
+/* Browser may not render a perfect circle */
+.css-mb .mb-display:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 1%;
+  height: 1.5164%;
+  margin-left: -0.5%;
+  border-radius: 50%;
+  background: #525252;
+}
+
+/* Glare */
+/* Browser may not render the top and right offset evenly */
+.css-mb .mb-display:after {
+  content: '';
+  display: none;
+  position: absolute;
+  right: 0.4%;
+  top: 0.64%; 
+  width: 62.5%;
+  height: 100%;
+  
+  background: none; /* Hide the gradient on older browsers */
+  background:    -moz-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* FF3.6+ */
+  background: -webkit-linear-gradient(36deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* Chrome10+ and Safari5.1+ compute the degree differently */
+  background:      -o-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* Opera 11.10+ */
+  background:     -ms-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* IE10+ */
+  background:         linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%);
+  
+  -webkit-border-top-right-radius: 5.3075%;
+      -moz-border-radius-toptight: 5.3075%;
+          border-top-right-radius: 5.3075%;
+}
+
+/* Only show glare, if the class is applied */
+.css-mb.with-glare .mb-display:after { display: block; }
+
+/* Position the screen and give make it the right size, ratio 16:10 */
+.css-mb .mb-screen-position {
+  position: absolute;
+  top: 6.5%;
+  width: 93.2%;
+  left: 3.4%;
+  height: 0;
+  margin: 0;
+  padding-bottom: 58.25%; /* Ratio */
+}
+
+/* Give parent (this element) a "height", so that child elements can use height: 100%;*/
+.css-mb .mb-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #4b4b4d; /* bg color if content is not big enough, or rendering is off */
+}
+
+/* Image on the screen */
+.css-mb .mb-screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Iframe on the screen */
+.css-mb .mb-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Macbook body */
+.css-mb .mb-body {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 2.3%;
+  background: #e6e7e8;
+}
+
+/* The groove */
+.css-mb .mb-body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 14.0740%;
+  height: 0;
+  padding-bottom: 1.4814%;
+  margin-left: -7.037%;
+  background: #a9abae;
+  
+  -webkit-border-bottom-left-radius:  7.0370% 50%;
+      -moz-border-radius-bottomleft:  7.0370% 50%;
+          border-bottom-left-radius:  7.0370% 50%;
+  
+  -webkit-border-bottom-right-radius: 7.0370% 50%;
+      -moz-border-radius-bottomtight: 7.0370% 50%;
+          border-bottom-right-radius: 7.0370% 50%;  
+}
+
+/* Macbook bottom */
+.css-mb .mb-bottom-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 0.7407%;
+  background: #a9abae;
+  
+  -webkit-border-bottom-left-radius:  12% 600%;
+      -moz-border-radius-bottomleft:  12% 600%;
+          border-bottom-left-radius:  12% 600%;
+  
+  -webkit-border-bottom-right-radius: 12% 600%;
+      -moz-border-radius-bottomtight: 12% 600%;
+          border-bottom-right-radius: 12% 600%; 
+}
+
+/*-----------------------------IPHONE------------------------------*/
+
+/*----------*\
+   #LAYOUT
+\*----------*/
+
+
+
+.temp-wrapper {
+  margin: 20px;
+  height: 400px;
+}
+
+@media all and (min-width: 480px) {
+  .temp-wrapper {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .temp-wrapper--wide {
+    width: 100%;
+  }
+
+  .temp-wrapper--wider {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .temp-wrapper {
+    width: 33.33337%;
+  }
+
+  .temp-wrapper--wide {
+    width: 66.66667%;
+  }
+
+  .temp-wrapper--wider {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .temp-wrapper {
+    width: 25%;
+  }
+
+  .temp-wrapper--wide {
+    width: 50%;
+  }
+
+  .temp-wrapper--wider {
+    width: 75%;
+  }
+}
+
+
+
+
+
+/*------------*\
+   #IPHONE X
+\*------------*/
+
+
+
+.px {
+  position: relative;
+  padding: 6% 7%;
+}
+
+.px--ls {
+  padding: 3.3% 3%;
+}
+
+.px__body {
+  position: absolute;
+  top:    0;
+  right:  1%;
+  bottom: 0;
+  left:   1%;
+  background: linear-gradient(to top, #e5e5e5 0%, #f7f7f9 10%, #eeeef0 90%);
+  border-radius: 14%/7%;
+  box-shadow: inset 0 0 3px 1px #000
+}
+
+.px--ls > .px__body {
+  top:    1%;
+  right:  0;
+  bottom: 1%;
+  left:   0;
+  border-radius: 7%/14%;
+}
+
+.px__body:before {
+  content: '';
+  position: absolute;
+  top:     .7%;
+  right:  1.4%;
+  bottom:  .7%;
+  left:   1.4%;
+  background-color: #000;
+  border-radius: 13%/7%;
+  box-shadow: 0 0 3px #000
+}
+
+.px--ls > .px__body:before {
+  top:    1.4%;
+  right:   .7%;
+  bottom: 1.4%;
+  left:    .7%;
+  border-radius: 7%/13%;
+}
+
+.px__body:after {
+  content: '';
+  position: absolute;
+  top:    1%;
+  right:  2.3%;
+  bottom: 1%;
+  left:   2.3%;
+  background-color: #000;
+  box-shadow: inset 0 0 10px 2px #fff;
+  border-radius: 13%/6.5%;
+}
+
+.px--ls > .px__body:after {
+  top:    2.3%;
+  right:  1%;
+  bottom: 2.3%;
+  left:   1%;
+  border-radius: 6.5%/13%;
+}
+
+.px__body__cut {
+  position: absolute;
+  z-index: 2;
+  top:   3%;
+  left: 50%;
+  width: 50%;
+  height: 3.5%;
+  background-color: #000;
+  border-radius: 0 0 10% 10%/80%;
+  transform: translate3d(-50%,0,0);
+}
+
+.px--ls .px__body__cut {
+  top: 50%;
+  left: 3%;
+  width: 3.5%;
+  height:  50%;
+  border-radius: 0 80% 80% 0/10%;
+  transform: translate3d(0,-50%,0);
+}
+
+.px__body__speaker, .px__body__camera, .px__body__sensor {
+  position: absolute;
+  z-index: 2;
+  background-color: #222;
+  transform: translate(-50%,-50%);
+}
+
+.px__body__speaker {
+  top:  4%;
+  left: 50%;
+  width: 12%;
+  height:  .8%;
+  border-radius: 5px;
+}
+
+.px--ls .px__body__speaker {
+  top:  50%;
+  left: 4%;
+  width:    .8%;
+  height: 12%;
+}
+
+.px__body__camera {
+  top:   4%;
+  left: 36%;
+  width:  3.5%;
+  height: 1.7%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px 1px #000;
+}
+
+.px--ls .px__body__camera {
+  top:  64%;
+  left:  4%;
+  width:  1.7%;
+  height: 3.5%;
+}
+
+.px__body__sensor {
+  top:   4%;
+  left: 61%;
+  width:  2.2%;
+  height: 1.1%;
+  border-radius: 50%;
+  background-color: #2a4a73;
+  box-shadow: inset 0 0 2px 1px #000;
+}
+
+.px--ls .px__body__sensor {
+  top:  39%;
+  left:  4%;
+  width:  1.1%;
+  height: 2.2%;
+}
+
+.px__body__mute, .px__body__up, .px__body__down, .px__body__right {
+  position: absolute;
+  background-color: #b5b8ba;
+  box-shadow: inset 0 5px 5px -3px rgba(0,0,0,.5), inset 0 -5px 5px -3px rgba(0,0,0,.5);
+  transform: translate(0,-50%);
+}
+
+.px--ls .px__body__mute, .px--ls .px__body__up, .px--ls .px__body__down, .px--ls .px__body__right {
+  box-shadow: inset 5px 0 5px -3px rgba(0,0,0,.5), inset -5px 0 5px -3px rgba(0,0,0,.5);
+  transform: translate(-50%,0);
+}
+
+.px--ls .px__body__right {
+  background-color: #f4f6f6;
+}
+
+.px__body__mute {
+  top: 14.7%;
+  left: -.7%;
+  width: .7%;
+  height: 4%;
+  border-radius: 1px 0 0 1px;
+}
+
+.px--ls .px__body__mute {
+  top: auto;
+  left:  14.7%;
+  bottom: -.7%;
+  width: 4%;
+  height: .7%;
+  border-radius: 0 0 1px 1px;
+}
+
+.px__body__up, .px__body__down {
+  left: -1%;
+  width:  1%;
+  height: 7.5%;
+  border-radius: 2px 0 0 2px;
+}
+
+.px--ls .px__body__up, .px--ls .px__body__down {
+  bottom: -1%;
+  width:  7.5%;
+  height: 1%;
+  border-radius: 0 0 2px 2px;
+}
+
+.px__body__up {
+  top: 25%;
+}
+
+.px--ls .px__body__up {
+  top: auto;
+  left: 25%;
+}
+
+.px__body__down {
+  top: 34%;
+}
+
+.px--ls .px__body__down {
+  top: auto;
+  left: 34%;
+}
+
+.px__body__right {
+  top:   25%;
+  right: -1%;
+  width:  1%;
+  height: 7.5%;
+  border-radius: 0 2px 2px 0;
+}
+
+.px--ls .px__body__right {
+  top:  -1%;
+  right: auto;
+  left: 25%;
+  width:  7.5%;
+  height: 1%;
+  border-radius: 2px 2px 0 0;
+}
+
+.px__screen {
+  position: relative;
+  z-index: 1;
+}
+
+.px__screen__ {
+  position: relative;
+  padding-bottom: 218%;
+  background-color: #888;
+  border-radius: 10%/5%;
+  box-shadow: 0 0 10px #000;
+}
+
+.px--ls .px__screen__ {
+  padding-bottom: 46%;
+  border-radius: 5%/10%;
+}
+
+.px__screen__frame {
+  position: absolute;
+  top:    0;
+  right:  0;
+  bottom: 0;
+  left:   0;
+  overflow: hidden;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: center center
+}
+
+  .px__screen__frame > .fa {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    font-size: 5em;
+    transform: translate(-50%,-50%);
+  }
+
+
+#smartphone {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10%;
+  transform: scale(0.75);
+}
+
+#notebook {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15%;
+}
