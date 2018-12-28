@@ -15,14 +15,14 @@
                 <ul>
                     <li><a href="https://github.com/diegosoriarios"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.instagram.com/diegosoriarios/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/sr_n1nguem"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://twitter.com/diegosoriarios"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
         <header>
             <div class="container">
                 <div class="row">
-                    <h1 class="name center animated fadeInDown">Diego</h1>
+                    <h1 class="name center animated fadeInDown">NOME</h1>
                     <div class="glitch elep center animated fadeInDown" data-text="MOBILE">A WEB<br />DEVELOPER</div>
                 </div>
             </div>
@@ -30,16 +30,16 @@
         <section>
             <div class="container">
                 <div class="row center">
-                    <ul class='circle-container'>
-                        <li><img src='https://pluralsight.imgix.net/paths/path-icons/html5-7ac65c8ec0.png'></li>
-                        <li><img src='https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png'></li>
-                        <li><img src='https://pluralsight.imgix.net/paths/path-icons/javascript-36f5949a45.png'></li>
-                        <li><img src='https://pluralsight2.imgix.net/paths/images/react-0f6558f88f.png'></li>
-                        <li><img src='https://cdn-images-1.medium.com/max/1600/1*wqYF-8Dmh7LhtLkKfERc3Q.png'></li>
-                        <li><img src='https://woliveiras.com.br/images/posts/nodejs.png'></li>
-                        <li><img src='https://thinkster.io/assets/homepage/rails-9b13de39de9d2eed10a2418734ee1e584cdc9634c04206af1c2bfcc8b0d0e3d5.png'></li>
-                        <li><img src='https://www.softexia.com/wp-content/uploads/2017/04/Java-logo.png'></li>
-                    </ul>
+                    <div id="particles-js">
+                        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <ul>
+                                    <li>REACT</li>
+                                    <li>HTML5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -52,5 +52,99 @@
         </section>
         <footer></footer>
         <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+            });
+            particlesJS("particles-js", { 
+                "particles": { 
+                    "number": { 
+                        "value": 120, "density": { 
+                            "enable": true, "value_area": 800 
+                        } 
+                    }, 
+                    "color": { 
+                        "value": "#000" 
+                    }, 
+                    "shape": { 
+                        "type": "circle", "stroke": { 
+                            "width": 0, "color": "#000000" 
+                        }, 
+                        "polygon": { 
+                            "nb_sides": 5 }, 
+                            "image": { 
+                                "src": "img/github.svg", "width": 100, "height": 100 
+                            } 
+                        }, 
+                        "opacity": { 
+                            "value": 0.5, "random": false, "anim": { 
+                                "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false 
+                            } 
+                        }, 
+                        "size": { 
+                            "value": 3, "random": true, "anim": { 
+                                "enable": false, "speed": 40, "size_min": 0.1, "sync": false 
+                            } 
+                        }, 
+                        "line_linked": { 
+                            "enable": true, "distance": 150, "color": "#000000", "opacity": 0.4, "width": 1 
+                        }, 
+                        "move": { 
+                            "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { 
+                                "enable": false, "rotateX": 600, "rotateY": 1200 
+                            } 
+                        } 
+                    }, 
+                    "interactivity": { 
+                        "detect_on": "canvas", "events": { 
+                            "onhover": { 
+                                "enable": true, "mode": "repulse" 
+                            }, 
+                            "onclick": { 
+                                "enable": true, "mode": "push" 
+                            }, 
+                            "resize": true 
+                        }, 
+                        "modes": { 
+                            "grab": { 
+                                "distance": 400, "line_linked": { 
+                                    "opacity": 1 
+                                } 
+                            }, 
+                            "bubble": { 
+                                "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 
+                            }, 
+                            "repulse": { 
+                                "distance": 200, "duration": 0.4 
+                            }, 
+                            "push": { 
+                                "particles_nb": 4 
+                            }, 
+                            "remove": { 
+                                "particles_nb": 2 
+                            } 
+                        } 
+                    }, 
+                    "retina_detect": true 
+                });
+                var count_particles, stats, update;
+                stats = new Stats();
+                stats.setMode(0);
+                stats.domElement.style.position = 'absolute';
+                stats.domElement.style.left = '0px';
+                stats.domElement.style.top = '0px';
+                document.body.appendChild(stats.domElement);
+                count_particles = document.querySelector('.js-count-particles');
+                update = function () {
+                    stats.begin();
+                    stats.end();
+                    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                    }
+                    requestAnimationFrame(update);
+                };
+                requestAnimationFrame(update);;
+        </script>
     </body>
 </html>
