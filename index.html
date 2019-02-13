@@ -15,7 +15,18 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     <body>
-    <span class="btnf btn-floating btn-large waves-effect grey darken-3"> <i class="fas fa-envelope"></i></i></span>
+    <span class="btnf btn-floating btn-large waves-effect grey darken-3" onclick="modal()"> <i class="fas fa-envelope" id="msg-icon"></i></i></span>
+        <div id="message-window">
+            <form onsubmit="submitForm()">
+                <label>Nome: </label>
+                <input type="text" /><br />
+                <label>E-mail: </label>
+                <input type="email" /><br />
+                <label>Mensagem</label>
+                <textarea></textarea><br />
+                <input type="submit" />
+            </form>
+        </div>
         <div class="nav-wrapper">
             <div class="izq"><i class="fas fa-bars"></i></div>
             <div class="der">
@@ -361,6 +372,25 @@
                     requestAnimationFrame(update);
                 };
                 requestAnimationFrame(update);;
+
+                function modal(){
+                    var modal = document.getElementById("message-window")
+                    var icon = document.getElementById("msg-icon")
+                    if(modal.style.display === "block"){
+                        modal.style.display = "none"
+                        icon.classList.remove("fa-times")
+                        icon.classList.add("fa-envelope")
+                    }else{
+                        modal.style.display = "block"
+                        icon.classList.remove("fa-envelope")
+                        icon.classList.add("fa-times")
+                    }
+                }
+
+                function submitForm(e){
+                    e.preventDefault()
+                    alert("send")
+                }
         </script>
     </body>
 </html>
